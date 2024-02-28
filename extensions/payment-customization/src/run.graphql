@@ -1,0 +1,15 @@
+query RunInput {
+  cart {
+        buyerIdentity {
+          customer {
+            id
+            email
+            b2b: hasAnyTag(tags: ["b2b","wholesale"])
+          }
+        }
+   } 
+    paymentMethods {
+    id
+    name
+     }
+}
